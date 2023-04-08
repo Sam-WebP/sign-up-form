@@ -1,0 +1,70 @@
+:root {
+    --margin-top: 10px;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: fantasy;
+    color: white;
+}
+
+body {
+    background-image: url("space-wallpaper.jpg");
+    background-size: cover;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.picture-banner-container {
+    color: white;
+    width: 30%;
+    min-height: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.form-page-side {
+    
+    width: 70%;
+    min-height: 100%;
+    flex: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.dummy-text {
+ 
+    color: white;
+    max-width: min(480px, 55%);
+    max-height: 30%;
+    padding-left: 20%;
+    padding-top: 10%;
+    font-weight: 500;
+}
+
+.italics {
+    font-style: italic;
+}
+
+.form-container {
+    border: 3px solid black;
+    margin: 10%;
+    width: max(500px, 44%);
+    padding-left: 10%;
+    padding-top: 1%;
+    padding-bottom: 3%;
+    background-color: rgba(0, 0, 0, 0.4);
+    box-shadow: 0 0 10px 4px rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-form {
+    display: flex;
+    max-width: min(480px, 80%);
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    column-gap: 3px;
+}
