@@ -1,12 +1,13 @@
 :root {
     --margin-top: 10px;
     --max-height: max(200px, 30%);
+    --main-form-width:  min(400px, 80%);
 }
 
 html, body {
     min-height: 100%;
     margin: 0;
-    font-family: fantasy;
+    font-family:  "Open Sans", sans-serif;
     color: white;
 }
 
@@ -39,7 +40,7 @@ body {
 .dummy-text {
  
     color: white;
-    max-width: min(400px, 80%);
+    max-width: min(var(--main-form-width));
     max-height: 20%;
     padding-left: 20%;
     padding-top: min(5%);
@@ -57,7 +58,7 @@ body {
     width: max(500px, 38%);
     padding-left: 10%;
     padding-top: 1%;
-    padding-bottom: 1%;
+    padding-bottom: 45px;
     background-color: rgba(0, 0, 0, 0.4);
     box-shadow: 0 0 40px 4px #fc5310;
     border-radius: 10px;
@@ -71,10 +72,47 @@ body {
 
 .main-form {
     display: flex;
-    max-width: min(400px, 80%);
+    max-width: min(var(--main-form-width));
     justify-content: space-between;
     flex-wrap: wrap;
     max-height: var(--max-height);
     row-gap: 20px;
     column-gap: 3px;
+}
+
+.button-container {
+    
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+    min-width: var(--main-form-width);
+}
+
+button {
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    letter-spacing: 2px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000;
+    cursor: pointer;
+    border: 3px solid;
+    padding: 0.25em 0.5em;
+    box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+    position: relative;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+button:active {
+    box-shadow: 0px 0px 0px 0px;
+    top: 5px;
+    left: 5px;
+}
+
+@media (min-width: 768px) {
+    button {
+        padding: 0.25em 0.75em;
+    }
 }
