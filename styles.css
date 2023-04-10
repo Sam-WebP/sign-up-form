@@ -19,16 +19,30 @@ body {
 }
 
 .picture-banner-container {
+    background-image: url("flash-gif.gif");
     color: white;
-    width: 30%;
+    width: 20%;
     min-height: 100%;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.logo-container {
+    background-image: url("into-the-crypto-version-logo-full-dark.webp");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    padding: 40%;
+    margin: 5%;
+    position: relative;
+    display: flex;
 }
 
 .form-page-side {
-    
-    width: 70%;
+    width: 80%;
     min-height: 100vh;
     background-color: rgba(0, 0, 0, 0.8);
     display: flex;
