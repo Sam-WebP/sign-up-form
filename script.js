@@ -10,7 +10,7 @@ let checkMatch = (fieldOne, fieldTwo) => {
 
 let warnMatch = (fieldOne, fieldTwo) => {
     if (!checkMatch(fieldOne, fieldTwo)) {
-        fieldTwo.style.border = "solid 2px red";
+        fieldTwo.style.border = "solid 3px red";
        } else {
         fieldTwo.style.border = "solid 3px green";
        }
